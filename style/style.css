@@ -97,8 +97,32 @@
     width: auto;
 }
 
-
-
+/* collection section styel  */
+.collection{
+    margin: 50px;
+}
+.collection h1{
+    text-align: center;
+    margin: 20px 0;
+}
+.collection-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px ;
+    padding: 0 150px;
+}
+.collecttion-card-item {
+    padding: 17px 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.collecttion-card-item img{
+    width: 100%;
+}
+.collecttion-card-item i{
+    color: orangered;
+}
 
 
 
@@ -135,6 +159,10 @@
     .sponsor-list {
         flex-direction: row;
     }
+    .collection-card{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 25px;
+    }
 
 }
 
@@ -149,5 +177,9 @@
 
     .header-banner-content {
         text-align: center;
+    }
+    .collection-card{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 40px;
     }
 }
