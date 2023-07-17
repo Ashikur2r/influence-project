@@ -65,7 +65,7 @@
     margin: 16px 0;
 }
 
-.header-banner-btn {
+.header-banner-btn, .feature-btn {
     padding: 10px 24px;
     font-weight: 700;
     color: white;
@@ -73,7 +73,7 @@
     border-radius: 41px;
 }
 
-.header-banner-btn i {
+.header-banner-btn i, .feature-btn i {
     margin-left: 10px;
     color: white;
 }
@@ -123,7 +123,24 @@
 .collecttion-card-item i{
     color: orangered;
 }
+/* feature section  */
 
+.feature{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin: 100px 0;
+    padding-left: 100px;
+    padding-right: 150px ;
+}
+
+.feature-content h1{
+    font-size: 2rem;
+}
+.feature-content p{
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
 
 
 /* responsive style  */
@@ -161,9 +178,22 @@
     }
     .collection-card{
         grid-template-columns: repeat(1,1fr);
-        padding: 0 25px;
+        padding: 0 5px;
     }
 
+    .feature{
+        flex-direction: column-reverse;
+        padding: 0 35px;
+    }
+    .feature-content{
+        text-align: center;
+    }
+    .feature img, .collection-card{
+        width:100%;
+    }
+    /* .feature-banner-pic{
+        padding: 0 25px;
+    } */
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -181,5 +211,15 @@
     .collection-card{
         grid-template-columns: repeat(2,1fr);
         padding: 0 40px;
+    }
+    .feature{
+        flex-direction: column-reverse;
+        padding: 0 25px;
+    }
+    .feature-content{
+        text-align: center;
+    }
+    .feature img{
+        width:100%;
     }
 }
